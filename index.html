@@ -3,11 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <title>おすすめサイト集</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }
+    h1 { text-align: center; }
+    ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    li.site-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); width: 250px; padding: 20px; transition: transform 0.2s; }
+    li.site-card:hover { transform: translateY(-5px); }
+    li.site-card a { text-decoration: none; color: #333; }
+    li.site-card h2 { margin-top: 0; font-size: 18px; }
+    li.site-card p { font-size: 14px; color: #666; }
+  </style>
 </head>
 <body>
   <h1>おすすめサイト一覧</h1>
   <ul>
-    <li><a href="https://example.com" target="_blank">Example サイト</a></li>
+    <li class="site-card">
+      <a href="https://example1.com" target="_blank">
+        <h2>Example サイト1</h2>
+        <p>IT系の最新情報がわかりやすくまとめられているブログ</p>
+      </a>
+    </li>
+    <li class="site-card">
+      <a href="https://example2.com" target="_blank">
+        <h2>Example サイト2</h2>
+        <p>生活・ライフハック情報を中心に掲載しているサイト</p>
+      </a>
+    </li>
+    <li class="site-card">
+      <a href="https://example3.com" target="_blank">
+        <h2>Example サイト3</h2>
+        <p>ゲームやエンタメ情報を楽しく紹介しているサイト</p>
+      </a>
+    </li>
+    <!-- ここにさらにサイトカードを追加可能 -->
   </ul>
 </body>
 </html>
+
